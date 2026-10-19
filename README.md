@@ -173,9 +173,11 @@ The Aspen Grove analogy illustrates the coexistence of shared structural roots a
 
 A candidate decomposition is:
 
+$$
 \[
 T_i \approx K \oplus \Delta_i
 \]
+$$
 
 where:
 
@@ -224,9 +226,11 @@ Evaluation criteria depend on the task and operating context.
 
 UCPSF represents Perspective as:
 
+$$
 \[
 P=(G,C,B,T,R)
 \]
+$$
 
 where:
 
@@ -264,9 +268,11 @@ The Dual-Hybrid architecture proposes separate registries for Localization Engin
 
 A candidate configuration may be represented as:
 
+$$
 \[
 a=(L_i,I_j,C_{ij})
 \]
+$$
 
 where:
 
