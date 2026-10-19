@@ -181,17 +181,9 @@ $$
 
 where:
 
-$$
 - \(T_i\): Individual Scoring Tree;
-$$
-
-$$
 - \(K\): Shared Common Concept Core;
-$$
-
-$$
 - \(\Delta_i\): Specialized structural or behavioral differences.
-$$
 
 The objective is not maximal compression.
 
@@ -242,13 +234,11 @@ $$
 
 where:
 
-$$
 - \(G\): Goals;
 - \(C\): Context and constraints;
 - \(B\): Resource budget;
 - \(T\): Time horizon;
 - \(R\): Risk preferences.
-$$
 
 **Meta-Scoring Intelligence** evaluates the evaluators themselves.
 
@@ -286,9 +276,9 @@ $$
 
 where:
 
-- \($$ L_i $$ \) $$: Localization Engine;
-- \($$ I_j $$\): Per-Node Intelligence Engine;
-- \($$ C_{ij} $$ \): Composition contract.
+- \(L_i\): Localization Engine;
+- \(I_j\): Per-Node Intelligence Engine;
+- \(C_{ij}\): Composition contract.
 
 The Universal Control Plane selects among compatible configurations according to Perspective, evidence, cost, risk, and task requirements.
 
