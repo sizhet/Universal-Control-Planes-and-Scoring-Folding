@@ -182,7 +182,7 @@ $$
 where:
 
 $$
-- \(T_i\): Individual Scoring Tree;
+- T_i: Individual Scoring Tree;
 $$
 
 $$
