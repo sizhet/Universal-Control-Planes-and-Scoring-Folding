@@ -1,0 +1,65 @@
+
+cff-version: 1.2.0
+
+message: >-
+  If you use or reference this research, please cite the UCPSF
+  repository using the metadata provided in this file.
+
+type: software
+
+title: >-
+  Universal Control Planes and Scoring Tree/Forest/Folding
+  for Structural Intelligence (UCPSF)
+
+abstract: >-
+  This research repository proposes a unified framework for
+  Generalized Scoring Intelligence, Scoring Trees and Forests,
+  Value-Based Folding, Branching-Based Folding, ANN Scoring
+  Nodes, Unaligned AND Folding, recursive Common Concept Core
+  (CCC) distillation, Perspective-Aware Meta-Scoring, and
+  Dual-Hybrid Localization and Per-Node Intelligence.
+
+  The framework introduces a proposed Universal Control Plane
+  for coordinating heterogeneous intelligence components,
+  evaluation structures, evidence, governance, and Structural
+  Recursive Self-Improvement (RSI).
+
+  The initial release is a conceptual research and architecture
+  contribution. Its proposed mechanisms and hypotheses require
+  further formalization and independent empirical validation.
+
+authors:
+  - family-names: Tan
+    given-names: Sizhe
+
+  - name: GPT-Obot
+
+version: 1.0.0
+
+date-released: 2026-10-15
+
+repository-code: >-
+  https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
+
+url: >-
+  https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
+
+license: Apache-2.0
+
+keywords:
+  - Structural Intelligence
+  - Generalized Scoring Intelligence
+  - Scoring Tree
+  - Scoring Forest
+  - Structural Folding
+  - Unaligned AND Folding
+  - Common Concept Core
+  - Recursive Distillation
+  - Meta-Scoring Intelligence
+  - Perspective-Aware Optimization
+  - Hybrid Localization
+  - Per-Node Intelligence
+  - Universal Control Plane
+  - Structural Recursive Self-Improvement
+  - AI Governance
+  - Collective Structural Learning
