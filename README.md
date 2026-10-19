@@ -550,7 +550,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned following the archived release.
+DOI: 10.5281/zenodo.23486273.
 
 See [CITATION.cff](CITATION.cff) for machine-readable citation metadata.
 
