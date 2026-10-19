@@ -1,0 +1,20 @@
+
+Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)
+
+Authors: Sizhe Tan & GPT-Obot
+Version: 1.0.0 | October 2026
+
+UCPSF proposes a unified research framework for Generalized Scoring Intelligence, Scoring Trees and Forests, structural folding, and Universal Control Planes in complex AI systems.
+
+The framework introduces three proposed scoring operator families: Value-Based Folding, Branching-Based Folding, and ANN Scoring Nodes. It investigates Unaligned AND Folding, recursive Common Concept Core (CCC) distillation, Perspective-Aware Meta-Scoring, and adaptive Hybrid Localization and Per-Node Intelligence.
+
+A central contribution is the proposed Universal Control Plane architecture, which coordinates heterogeneous intelligence engines, evaluation structures, evidence, governance, and Structural Recursive Self-Improvement (RSI). The framework distinguishes the evolution of Intelligence Architectures from the evolution of Evaluation Architectures, emphasizing independent validation, counter-evidence, explicit contracts, and governed structural promotion.
+
+The initial release contains eight research papers, three conceptual case studies, architecture illustrations, and a roadmap of open research questions. It presents theoretical proposals and research hypotheses rather than completed experimental validation.
+
+GitHub Repository:
+https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
+
+DOI: Pending Zenodo archival release.
+
+Keywords: Structural Intelligence; Scoring Intelligence; Scoring Forest; Structural Folding; Common Concept Core; Meta-Scoring; Universal Control Plane; Hybrid Intelligence; Structural RSI; AI Governance.
