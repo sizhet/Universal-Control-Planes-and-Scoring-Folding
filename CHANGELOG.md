@@ -28,7 +28,7 @@ These are proposed future directions, not completed features.
 
 ---
 
-## [1.0.0] — 2026-10-15
+## [1.0.0] — 2026-10-19
 
 ### Initial Research Release
 
