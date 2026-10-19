@@ -182,7 +182,7 @@ $$
 where:
 
 $$
-- T_i: Individual Scoring Tree;
+- \(T_i\): Individual Scoring Tree;
 $$
 
 $$
@@ -286,11 +286,9 @@ $$
 
 where:
 
-$$
-- \(L_i\): Localization Engine;
-- \(I_j\): Per-Node Intelligence Engine;
-- \(C_{ij}\): Composition contract.
-$$
+- \($$ L_i $$ \) $$: Localization Engine;
+- \($$ I_j $$\): Per-Node Intelligence Engine;
+- \($$ C_{ij} $$ \): Composition contract.
 
 The Universal Control Plane selects among compatible configurations according to Perspective, evidence, cost, risk, and task requirements.
 
