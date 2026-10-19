@@ -183,7 +183,13 @@ where:
 
 $$
 - \(T_i\): Individual Scoring Tree;
+$$
+
+$$
 - \(K\): Shared Common Concept Core;
+$$
+
+$$
 - \(\Delta_i\): Specialized structural or behavioral differences.
 $$
 
