@@ -7,7 +7,7 @@
 **Project:** Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)  
 **Document ID:** UCPSF-004  
 **Version:** 1.0.0  
-**Date:** October 15, 2026  
+**Date:** October 19, 2026  
 **Status:** Proposed Algorithmic Framework and Research Hypothesis  
 **License:** Apache-2.0
 
@@ -36,6 +36,12 @@ A central principle is that **recursive distillation must preserve decision-rele
 The framework provides a candidate pathway for converting heterogeneous evaluation mechanisms into reusable, transferable, and recursively improvable Scoring Intelligence.
 
 **Keywords:** Common Concept Core, Recursive Distillation, Scoring Forest, Unaligned AND Folding, Structural Intelligence, Structural Folding, Core and Delta, Counter-Evidence, Universal Control Plane, Structural RSI, AI Relay, Evidence-Driven Growth
+
+---
+
+![Fig-004 — Unaligned AND Folding and CCC Distillation](../figures/Fig-004-Unaligned-AND-Folding-and-CCC-Distillation.png)
+
+**Fig-004.** Proposed extraction of reusable Common Concept Cores from heterogeneous evaluation structures.
 
 ---
 

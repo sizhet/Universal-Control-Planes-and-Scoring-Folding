@@ -7,7 +7,7 @@
 **Project:** Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)  
 **Document ID:** UCPSF-005  
 **Version:** 1.0.0  
-**Date:** October 15, 2026  
+**Date:** October 19, 2026  
 **Status:** Research Framework and Proposed Control Architecture  
 **License:** Apache-2.0
 
@@ -36,6 +36,12 @@ The central hypothesis is that intelligence systems can improve not only by gene
 This paper establishes the evaluative and control foundations for Hybrid Localization, Hybrid Per-Node Intelligence, Universal Control Plane architecture, and governed Structural RSI.
 
 **Keywords:** Perspective-Aware Optimization, Meta-Scoring Intelligence, Universal Control Plane, Evaluator Selection, Scoring Forest, Computational Budget, Anti-Goodhart, Structural RSI, Value of Information, Common Concept Core, Adaptive Evaluation, Structural Intelligence
+
+---
+
+![Fig-005 — Perspective Optimization and Meta-Scoring](../figures/Fig-005-Perspective-Optimization-and-Meta-Scoring.png)
+
+**Fig-005.** Perspective-aware evaluation, Scoring Forest selection, and Meta-Scoring.
 
 ---
 

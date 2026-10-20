@@ -7,9 +7,15 @@
 **Project:** Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)  
 **Document ID:** UCPSF-006  
 **Version:** 1.0.0  
-**Date:** October 15, 2026  
+**Date:** October 19, 2026  
 **Status:** Research Framework and Proposed Hybrid Intelligence Architecture  
 **License:** Apache-2.0
+
+---
+
+![Fig-006 — Dual-Hybrid Localization and Per-Node Intelligence](../figures/Fig-006-Dual-Hybrid-Localization-and-Per-Node-Intelligence.png)
+
+**Fig-006.** Adaptive composition of heterogeneous Localization and Per-Node Intelligence Engines.
 
 ---
 

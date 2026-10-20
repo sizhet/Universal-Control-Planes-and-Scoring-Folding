@@ -7,7 +7,7 @@
 **Project:** Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)  
 **Document ID:** UCPSF-007  
 **Version:** 1.0.0  
-**Date:** October 15, 2026  
+**Date:** October 19, 2026  
 **Status:** Proposed System Architecture and Research Framework  
 **License:** Apache-2.0
 
@@ -40,6 +40,12 @@ The central hypothesis is that a contract-governed Universal Control Plane can p
 The term *Universal* describes the intended generality of the control abstractions, not a claim of demonstrated applicability to every intelligence system.
 
 **Keywords:** Universal Control Plane, Structural RSI, Scoring Forest, Meta-Scoring Intelligence, Hybrid Structural Intelligence, AI Relay, Common Concept Core, Structural Folding, Policy Governance, Contract-First Architecture, Evidence-Driven Evolution, Distributed Control, Counter-Evidence
+
+---
+
+![Fig-007 — Universal Control Plane and Structural RSI](../figures/Fig-007-Universal-Control-Plane-and-Structural-RSI.png)
+
+**Fig-007.** Evidence-driven and governed structural evolution under a Universal Control Plane.
 
 ---
 

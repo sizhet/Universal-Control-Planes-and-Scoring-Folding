@@ -7,7 +7,7 @@
 **Project:** Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)  
 **Document ID:** UCPSF-002  
 **Version:** 1.0.0  
-**Date:** October 15, 2026  
+**Date:** October 19, 2026  
 **Status:** Research Framework and Algorithmic Architecture  
 **License:** Apache-2.0
 
@@ -36,6 +36,12 @@ The central hypothesis is that a relatively small collection of reusable operato
 The three families are proposed as a practical starting point, not as a proven exhaustive basis for all intelligent control mechanisms.
 
 **Keywords:** Universal Control Plane, Scoring Operators, Value-Based Folding, Branching-Based Folding, ANN Scoring Node, Structural Intelligence, Scoring Tree, Scoring Forest, Perspective Optimization, Structural RSI, AI Relay, Compositional Intelligence
+
+---
+
+![Fig-002 — Three Universal Scoring Operators](../figures/Fig-002-Three-Universal-Scoring-Operators.png)
+
+**Fig-002.** Three proposed Scoring Operator families and their roles in generalized evaluation.
 
 ---
 

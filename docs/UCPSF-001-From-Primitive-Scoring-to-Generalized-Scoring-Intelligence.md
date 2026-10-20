@@ -7,7 +7,7 @@
 **Project:** Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)  
 **Document ID:** UCPSF-001  
 **Version:** 1.0.0  
-**Date:** October 15, 2026  
+**Date:** October 19, 2026  
 **Status:** Research Framework and Architectural Hypothesis  
 **License:** Apache-2.0
 
@@ -30,6 +30,12 @@ The central hypothesis is that scoring should not remain merely an auxiliary fun
 This paper establishes the motivation and conceptual foundations for the UCPSF research program. Subsequent papers develop universal scoring operators, Unaligned AND Folding, Common Concept Core extraction, recursive structural distillation, perspective-aware optimization, hybrid intelligence architectures, and structural recursive self-improvement.
 
 **Keywords:** Generalized Scoring Intelligence, Structural Intelligence, Universal Control Plane, Metric Distance, Scoring Tree, Scoring Forest, Meta-Scoring, Perspective Optimization, Cross-Domain Judgment, Recursive Self-Improvement, Common Concept Core
+
+---
+
+![Fig-001 — Universal Control Plane Grand Map](../figures/Fig-001-Universal-Control-Plane-Grand-Map.png)
+
+**Fig-001.** Universal Control Plane Grand Map — from task requirements and hybrid computation to scoring, evidence, governance, and Structural RSI.
 
 ---
 

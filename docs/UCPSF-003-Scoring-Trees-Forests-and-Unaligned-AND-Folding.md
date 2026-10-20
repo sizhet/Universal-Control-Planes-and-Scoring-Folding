@@ -7,7 +7,7 @@
 **Project:** Universal Control Planes and Scoring Tree/Forest/Folding for Structural Intelligence (UCPSF)  
 **Document ID:** UCPSF-003  
 **Version:** 1.0.0  
-**Date:** October 15, 2026  
+**Date:** October 19, 2026  
 **Status:** Research Framework and Proposed Structural Algorithm  
 **License:** Apache-2.0
 
@@ -36,6 +36,12 @@ The paper also develops the **Aspen Forest and Shared Root System** analogy as a
 The proposed framework establishes an algorithmic foundation for recursive CCC distillation, perspective-aware scoring, AI Relay, and Structural Recursive Self-Improvement.
 
 **Keywords:** Scoring Tree, Scoring Forest, Unaligned AND Folding, Common Concept Core, Structural Folding, Behavioral Equivalence, Structural Intelligence, Generalized Scoring Intelligence, Universal Control Plane, Counter-Evidence, Decision Preservation, Structural RSI
+
+---
+
+![Fig-003 — Scoring Trees, Forests, and Aspen Root System](../figures/Fig-003-Scoring-Trees-Forests-and-Aspen-Root-System.png)
+
+**Fig-003.** Individual Scoring Trees, Scoring Forests, and the Aspen-inspired shared-root architecture.
 
 ---
 
@@ -1347,7 +1353,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned after the initial archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 
