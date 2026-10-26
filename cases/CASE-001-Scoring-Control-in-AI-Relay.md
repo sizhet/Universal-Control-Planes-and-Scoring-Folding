@@ -238,9 +238,9 @@ The branches represent alternative control decisions rather than mandatory execu
 
 Following UCPSF-005, define:
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where:
 
@@ -364,7 +364,7 @@ For example, a candidate that violates a required security policy should not be 
 
 At each Relay stage, the Control Plane may choose from:
 
-\[
+$$
 A=
 \{
 \text{ACCEPT},
@@ -374,7 +374,7 @@ A=
 \text{ESCALATE},
 \text{STOP}
 \}
-\]
+$$
 
 ### 5.2 ACCEPT
 
@@ -428,7 +428,7 @@ A Scoring Forest allows multiple specialized evaluation structures.
 
 ### 6.2 Candidate Forest
 
-\[
+$$
 \mathcal{F}_S=
 \{
 T_{\mathrm{quality}},
@@ -437,7 +437,7 @@ T_{\mathrm{cost}},
 T_{\mathrm{context}},
 T_{\mathrm{policy}}
 \}
-\]
+$$
 
 ### 6.3 Quality Tree
 
@@ -500,9 +500,9 @@ For example:
 
 A meta-evaluator estimates the suitability of each evaluation mechanism.
 
-\[
+$$
 M(S_i\mid P,E)
-\]
+$$
 
 where:
 
@@ -594,7 +594,7 @@ Risk / Uncertainty Check
 
 A conceptual criterion is:
 
-\[
+$$
 VOI(a\mid P)
 =
 \mathbb{E}[U_{\mathrm{after}}]
@@ -602,7 +602,7 @@ VOI(a\mid P)
 U_{\mathrm{before}}
 -
 C(a)
-\]
+$$
 
 where \(a\) is an additional evaluation action.
 
@@ -1217,7 +1217,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned after the initial archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 

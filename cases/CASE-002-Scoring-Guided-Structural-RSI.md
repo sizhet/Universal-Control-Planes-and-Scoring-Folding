@@ -184,21 +184,21 @@ The system seeks to improve its performance on a distribution of software-engine
 
 A candidate objective is:
 
-\[
+$$
 \max_{\theta} U(\theta\mid P)
-\]
+$$
 
 subject to:
 
-\[
+$$
 C_{\mathrm{mandatory}}(\theta)=\mathrm{true}
-\]
+$$
 
 and:
 
-\[
+$$
 Cost(\theta)\leq B
-\]
+$$
 
 where:
 
@@ -357,10 +357,10 @@ Independent validation assesses whether apparent improvements generalize beyond 
 
 Let:
 
-\[
+$$
 \Theta =
 (\Theta_L,\Theta_I,\Theta_D,\Theta_S,\Theta_K,\Theta_C)
-\]
+$$
 
 where:
 
@@ -434,12 +434,12 @@ A single reward may obscure important tradeoffs.
 
 ### 6.2 Candidate Scoring Forest
 
-\[
+$$
 \mathcal{F}_S=
 \{
 T_Q,T_C,T_R,T_T,T_G,T_M
 \}
-\]
+$$
 
 where:
 
@@ -503,9 +503,9 @@ Mandatory constraints must be enforced independently of compensable scoring dime
 
 Following UCPSF-005:
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where:
 
@@ -760,9 +760,9 @@ A Behavioral CCC captures recurring decision behavior under specified conditions
 
 A candidate decomposition is:
 
-\[
+$$
 T_i \approx K \oplus \Delta_i
-\]
+$$
 
 where:
 
@@ -1390,7 +1390,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned after the initial archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 

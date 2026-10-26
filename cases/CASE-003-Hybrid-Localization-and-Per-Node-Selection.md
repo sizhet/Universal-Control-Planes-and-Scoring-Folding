@@ -237,9 +237,9 @@ The integrated LLM remains a valid candidate.
 
 Let:
 
-\[
+$$
 \mathcal{L}=\{L_1,L_2,\ldots,L_m\}
-\]
+$$
 
 represent available Localization Engines.
 
@@ -247,9 +247,9 @@ represent available Localization Engines.
 
 Let:
 
-\[
+$$
 \mathcal{I}=\{I_1,I_2,\ldots,I_n\}
-\]
+$$
 
 represent available Intelligence Engines.
 
@@ -257,9 +257,9 @@ represent available Intelligence Engines.
 
 A candidate configuration is:
 
-\[
+$$
 a=(L_i,I_j,C_{ij})
-\]
+$$
 
 where \(C_{ij}\) represents the applicable composition contract.
 
@@ -267,7 +267,7 @@ where \(C_{ij}\) represents the applicable composition contract.
 
 The set of valid configurations is:
 
-\[
+$$
 \mathcal{A}_{valid}
 =
 \{
@@ -276,7 +276,7 @@ Compatible(a)
 \land
 PolicyAllowed(a)
 \}
-\]
+$$
 
 ### 4.5 Architecture
 
@@ -568,9 +568,9 @@ Contract evolution should be versioned and independently validated.
 
 Following UCPSF-005:
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where:
 
@@ -629,12 +629,12 @@ Candidate configurations may be evaluated through:
 
 ### 9.2 Candidate Scoring Forest
 
-\[
+$$
 \mathcal{F}_S=
 \{
 T_L,T_I,T_C,T_R,T_B
 \}
-\]
+$$
 
 where:
 
@@ -694,12 +694,12 @@ Account for:
 
 A conceptual objective is:
 
-\[
+$$
 a^*
 =
 \arg\max_{a\in\mathcal{A}_{valid}}
 U(a\mid P,E)
-\]
+$$
 
 where \(E\) represents available evidence.
 
@@ -1037,9 +1037,9 @@ Unaligned AND Folding may identify reusable commonality.
 
 A candidate representation is:
 
-\[
+$$
 A_i \approx K_A \oplus \Delta_i
-\]
+$$
 
 where:
 
@@ -1402,7 +1402,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned after the initial archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 
