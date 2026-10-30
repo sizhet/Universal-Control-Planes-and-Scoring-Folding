@@ -243,10 +243,7 @@ Evaluation and search consume resources.
 A cost-aware objective is:
 
 $$
-J(x \mid P) =
-\mathbb{E}[U(x \mid P)]
--
-\lambda(P) C(x)
+J(x \mid P) = \mathbb{E}[U(x \mid P)] - \lambda(P) C(x)
 $$
 
 where:
@@ -582,9 +579,7 @@ A conceptual formulation is:
 $$
 VOI(a\mid P) =
 \mathbb{E}[U_{\mathrm{after}}(a\mid P)] -
-U_{\mathrm{before}}(P)
--
-C(a)
+U_{\mathrm{before}}(P) - C(a)
 $$
 
 The expression assumes utility and cost are represented in compatible units.
