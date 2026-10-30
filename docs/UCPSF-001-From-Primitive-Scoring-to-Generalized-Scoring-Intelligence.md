@@ -616,7 +616,7 @@ This suggests a recursive process:
 
 $$
 CCC_{t+1} =
-operatorname{Update}(CCC_t,\Delta E_t)
+\mathrm{Update}(CCC_t,\Delta E_t)
 $$
 
 where $\Delta E_t$ represents newly collected evidence.
