@@ -967,8 +967,7 @@ represent goals, context, budget, time horizon, and risk preferences.
 A Control Plane may choose an operator configuration:
 
 $$
-O^*
-=
+O^* =
 \arg\max_{O \in \mathcal{O}_{valid}}
 J(O\mid P,E)
 $$
@@ -980,10 +979,7 @@ where $\mathcal{O}_{valid}$ contains contract-compatible and policy-permitted op
 The objective may include:
 
 $$
-J(O\mid P,E) =
-\mathbb{E}[U(O\mid P,E)]
--
-\lambda C(O)
+J(O\mid P,E) = \mathbb{E}[U(O\mid P,E)] - \lambda C(O)
 $$
 
 where $C(O)$ represents expected evaluation cost.
