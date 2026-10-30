@@ -290,7 +290,7 @@ Examples include:
 Suppose an AI Relay system delegates a task when confidence falls below a threshold:
 
 $$
-operatorname{Delegate}(x) =
+\mathrm{Delegate}(x) =
 \mathbb{1}[c(x)<\tau]
 $$
 
