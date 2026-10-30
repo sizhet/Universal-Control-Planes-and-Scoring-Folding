@@ -181,8 +181,8 @@ The selected information must remain sufficient for the intended computation.
 A standard attention operation can be represented as:
 
 $$
-operatorname{Attention}(Q,K,V) =
-operatorname{softmax}
+\mathrm{Attention}(Q,K,V) =
+\mathrm{softmax}
 \left(
 \frac{QK^\top}{\sqrt{d_k}}
 \right)V
