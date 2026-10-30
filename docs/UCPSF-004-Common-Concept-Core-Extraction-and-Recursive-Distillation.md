@@ -468,7 +468,7 @@ We propose:
 
 $$
 K_{t+1} =
-operatorname{Update}(K_t,T_{t+1},E_{t+1})
+\mathrm{Update}(K_t,T_{t+1},E_{t+1})
 $$
 
 where $E_{t+1}$ includes supporting and contradictory evidence.
