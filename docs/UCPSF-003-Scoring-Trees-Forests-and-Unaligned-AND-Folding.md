@@ -931,7 +931,7 @@ Let:
 
 $$
 CCC_{t+1} =
-operatorname{Distill}(CCC_t,T_{new},E_t)
+\mathrm{Distill}(CCC_t,T_{new},E_t)
 $$
 
 where:
