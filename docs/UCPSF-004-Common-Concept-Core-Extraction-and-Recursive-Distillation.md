@@ -880,9 +880,7 @@ A candidate CCC should also be evaluated through downstream utility.
 
 $$
 Q_U =
-\mathbb{E}[U(D(K,x,P))]
--
-\mathbb{E}[U(D(T,x,P))]
+\mathbb{E}[U(D(K,x,P))] - \mathbb{E}[U(D(T,x,P))]
 $$
 
 ### 12.3 Constraint Preservation
@@ -920,15 +918,10 @@ A possible research objective is:
 
 $$
 J(K) =
-\alpha Q_D
-+
-\beta Q_U
-+
-\gamma Q_R
-+
-\delta Q_T
--
-\lambda C_K
+\alpha Q_D +
+\beta Q_U +
+\gamma Q_R +
+\delta Q_T - \lambda C_K
 $$
 
 where:
@@ -1051,14 +1044,10 @@ Detailed correspondence analysis, behavioral testing, and counter-evidence evalu
 Let:
 
 $$
-C_{\mathrm{total}}
-=
-C_{\mathrm{extract}}
-+
-C_{\mathrm{validate}}
-+
-C_{\mathrm{maintain}}
-+
+C_{\mathrm{total}} =
+C_{\mathrm{extract}} +
+C_{\mathrm{validate}} +
+C_{\mathrm{maintain}} +
 C_{\mathrm{reuse}}
 $$
 
