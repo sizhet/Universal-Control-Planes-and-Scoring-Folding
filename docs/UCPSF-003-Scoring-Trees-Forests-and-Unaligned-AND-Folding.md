@@ -505,8 +505,7 @@ Additional inputs include:
 The proposed Folding process returns:
 
 $$
-F_{\mathrm{AND}}(\mathcal{T},P,E,C,R)
-=
+F_{\mathrm{AND}}(\mathcal{T},P,E,C,R) =
 (CCC,\Delta,B,U)
 $$
 
@@ -791,8 +790,7 @@ A stronger criterion may evaluate downstream utility:
 $$
 Q_U =
 \mathbb{E}_{\mathcal{D}}
-[U(D(F,x,P))]
--
+[U(D(F,x,P))] -
 \mathbb{E}_{\mathcal{D}}
 [U(D(T,x,P))]
 $$
