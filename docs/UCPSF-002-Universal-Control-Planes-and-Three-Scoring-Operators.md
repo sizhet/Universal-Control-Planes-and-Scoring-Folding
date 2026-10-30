@@ -235,19 +235,19 @@ Value-Based Folding operates on values, parameters, weights, thresholds, or conf
 
 Let:
 
-\[
+$$
 \theta = (\theta_1,\theta_2,\ldots,\theta_n)
-\]
+$$
 
 represent a parameter vector.
 
 A scoring function may be written as:
 
-\[
+$$
 S(x \mid \theta,P)
-\]
+$$
 
-where \(P\) is the evaluation perspective.
+where $P$ is the evaluation perspective.
 
 The objective is to identify a parameter configuration that improves decision quality under applicable constraints.
 
@@ -255,19 +255,19 @@ The objective is to identify a parameter configuration that improves decision qu
 
 A simple formulation is:
 
-\[
+$$
 \theta^*
 =
 \arg\max_{\theta \in \Theta}
 J(\theta \mid P,E)
-\]
+$$
 
 where:
 
-- \(\Theta\): Admissible parameter space;
-- \(J\): Evaluation objective;
-- \(P\): Perspective;
-- \(E\): Validation evidence.
+- $\Theta$: Admissible parameter space;
+- $J$: Evaluation objective;
+- $P$: Perspective;
+- $E$: Validation evidence.
 
 The objective may account for quality, calibration, cost, robustness, and other criteria.
 
@@ -290,16 +290,15 @@ Examples include:
 
 Suppose an AI Relay system delegates a task when confidence falls below a threshold:
 
-\[
-\operatorname{Delegate}(x)
-=
+$$
+operatorname{Delegate}(x) =
 \mathbb{1}[c(x)<\tau]
-\]
+$$
 
 where:
 
-- \(c(x)\): Confidence estimate;
-- \(\tau\): Delegation threshold.
+- $c(x)$: Confidence estimate;
+- $\tau$: Delegation threshold.
 
 The threshold may be optimized according to:
 
@@ -311,9 +310,9 @@ The threshold may be optimized according to:
 
 A Perspective-aware threshold becomes:
 
-\[
+$$
 \tau = \tau(P)
-\]
+$$
 
 Different task perspectives may require different delegation policies.
 
@@ -367,9 +366,9 @@ Branching-Based Folding operates on sets of candidate branches or structural alt
 
 Let:
 
-\[
+$$
 B = \{b_1,b_2,\ldots,b_N\}
-\]
+$$
 
 represent a candidate branch set.
 
@@ -379,12 +378,12 @@ The system may evaluate, select, prune, merge, or compose branches.
 
 A basic selection mechanism is:
 
-\[
+$$
 b^*
 =
 \arg\max_{b_i \in B}
 S(b_i\mid P)
-\]
+$$
 
 This represents winner selection under a given scoring function.
 
@@ -394,17 +393,17 @@ However, complex systems may require more than selecting one branch.
 
 A central candidate operator is:
 
-\[
+$$
 F_{N\rightarrow K}(B,P,E)
-\]
+$$
 
 where:
 
-\[
+$$
 1 \le K < N
-\]
+$$
 
-The operator transforms \(N\) candidate branches into \(K\) retained or consolidated branches.
+The operator transforms $N$ candidate branches into $K$ retained or consolidated branches.
 
 The transformation may involve:
 
@@ -416,7 +415,7 @@ The transformation may involve:
 - Consensus extraction;
 - Diversity preservation.
 
-The objective is not necessarily to preserve the top \(K\) scalar scores.
+The objective is not necessarily to preserve the top $K$ scalar scores.
 
 It may instead preserve a useful collection of complementary alternatives.
 
@@ -515,11 +514,11 @@ An ANN Scoring Node uses a trained model to estimate an evaluation quantity.
 
 Let:
 
-\[
+$$
 S_{\phi}(x,P)
-\]
+$$
 
-represent a learned scoring function parameterized by \(\phi\).
+represent a learned scoring function parameterized by $\phi$.
 
 The model may estimate:
 
@@ -561,17 +560,17 @@ However, inference cost, training cost, calibration, and distribution shift must
 
 Suppose an expensive Scoring Forest produces reference evaluations:
 
-\[
+$$
 S_{\mathcal{F}}(x,P)
-\]
+$$
 
 A learned scorer may be trained to approximate:
 
-\[
+$$
 S_{\phi}(x,P)
 \approx
 S_{\mathcal{F}}(x,P)
-\]
+$$
 
 This creates a possible distillation path:
 
@@ -599,22 +598,22 @@ A relevant architectural hypothesis is that some scoring tasks may be decomposed
 
 A generic form is:
 
-\[
+$$
 S(x,r)
 =
 f_{\phi}(x)^\top W g_{\psi}(r)
 +
 b(x,r)
-\]
+$$
 
 where:
 
-- \(x\): Candidate representation;
-- \(r\): Reference or target representation;
-- \(f_{\phi}\): Candidate encoder;
-- \(g_{\psi}\): Reference encoder;
-- \(W\): Learned scoring matrix;
-- \(b\): Optional baseline or correction term.
+- $x$: Candidate representation;
+- $r$: Reference or target representation;
+- $f_{\phi}$: Candidate encoder;
+- $g_{\psi}$: Reference encoder;
+- $W$: Learned scoring matrix;
+- $b$: Optional baseline or correction term.
 
 This formulation illustrates how learned representations and matrix operations may support efficient scoring.
 
@@ -676,25 +675,25 @@ The interface must preserve enough information for downstream evaluation and con
 
 We propose:
 
-\[
+$$
 O:(X,P,E,C)\rightarrow(Y,S,U,T)
-\]
+$$
 
 where:
 
 **Inputs**
 
-- \(X\): Candidate values, branches, or structures;
-- \(P\): Evaluation perspective;
-- \(E\): Available evidence;
-- \(C\): Operator contract and constraints.
+- $X$: Candidate values, branches, or structures;
+- $P$: Evaluation perspective;
+- $E$: Available evidence;
+- $C$: Operator contract and constraints.
 
 **Outputs**
 
-- \(Y\): Resulting values or structures;
-- \(S\): Scoring information;
-- \(U\): Uncertainty and applicability information;
-- \(T\): Execution trace and audit evidence.
+- $Y$: Resulting values or structures;
+- $S$: Scoring information;
+- $U$: Uncertainty and applicability information;
+- $T$: Execution trace and audit evidence.
 
 Not every operator must produce a scalar score.
 
@@ -742,15 +741,15 @@ This supports reliable Relay, structural reuse, and auditability.
 
 ### 8.1 Operator Composition
 
-Let \(O_1\) and \(O_2\) represent compatible scoring operators.
+Let $O_1$ and $O_2$ represent compatible scoring operators.
 
 Their sequential composition is:
 
-\[
+$$
 O_2 \circ O_1
-\]
+$$
 
-provided that the output contract of \(O_1\) satisfies the input requirements of \(O_2\).
+provided that the output contract of $O_1$ satisfies the input requirements of $O_2$.
 
 ### 8.2 Sequential Composition
 
@@ -850,17 +849,17 @@ A Scoring Tree organizes scoring nodes through dependency relationships.
 
 A simplified representation is:
 
-\[
+$$
 T_S = (V,E,O,P,C)
-\]
+$$
 
 where:
 
-- \(V\): Nodes;
-- \(E\): Edges;
-- \(O\): Assigned operators;
-- \(P\): Perspective metadata;
-- \(C\): Contracts and constraints.
+- $V$: Nodes;
+- $E$: Edges;
+- $O$: Assigned operators;
+- $P$: Perspective metadata;
+- $C$: Contracts and constraints.
 
 ### 9.3 Example Tree
 
@@ -960,9 +959,9 @@ Operator selection should depend on the task perspective.
 
 Let:
 
-\[
+$$
 P = (G,C,B,T,R)
-\]
+$$
 
 represent goals, context, budget, time horizon, and risk preferences.
 
@@ -970,28 +969,28 @@ represent goals, context, budget, time horizon, and risk preferences.
 
 A Control Plane may choose an operator configuration:
 
-\[
+$$
 O^*
 =
 \arg\max_{O \in \mathcal{O}_{valid}}
 J(O\mid P,E)
-\]
+$$
 
-where \(\mathcal{O}_{valid}\) contains contract-compatible and policy-permitted operators.
+where $\mathcal{O}_{valid}$ contains contract-compatible and policy-permitted operators.
 
 ### 11.3 Cost-Aware Evaluation
 
 The objective may include:
 
-\[
+$$
 J(O\mid P,E)
 =
 \mathbb{E}[U(O\mid P,E)]
 -
 \lambda C(O)
-\]
+$$
 
-where \(C(O)\) represents expected evaluation cost.
+where $C(O)$ represents expected evaluation cost.
 
 ### 11.4 Adaptive Scoring Depth
 

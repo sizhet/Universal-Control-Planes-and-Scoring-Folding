@@ -140,17 +140,17 @@ A system therefore requires an explicit representation of Perspective.
 
 We propose:
 
-\[
+$$
 P = (G,C,B,T,R)
-\]
+$$
 
 where:
 
-- \(G\): Goals and utility objectives;
-- \(C\): Context and operational constraints;
-- \(B\): Computational and resource budget;
-- \(T\): Time horizon and urgency;
-- \(R\): Risk preferences and tolerance.
+- $G$: Goals and utility objectives;
+- $C$: Context and operational constraints;
+- $B$: Computational and resource budget;
+- $T$: Time horizon and urgency;
+- $R$: Risk preferences and tolerance.
 
 Governance requirements may be included in the constraint representation or maintained through a separate Policy Contract.
 
@@ -158,15 +158,15 @@ Governance requirements may be included in the constraint representation or main
 
 A scoring function becomes:
 
-\[
+$$
 S(x \mid P)
-\]
+$$
 
 rather than simply:
 
-\[
+$$
 S(x)
-\]
+$$
 
 This makes evaluation explicitly dependent on the decision context.
 
@@ -216,11 +216,11 @@ Therefore, Perspective-Aware Optimization may involve structural changes to the 
 
 Traditional optimization often seeks:
 
-\[
+$$
 x^* = \arg\max_{x \in X} U(x)
-\]
+$$
 
-for a specified objective \(U\).
+for a specified objective $U$.
 
 This formulation is appropriate when the objective is well-defined and the search cost is justified.
 
@@ -228,14 +228,14 @@ This formulation is appropriate when the objective is well-defined and the searc
 
 For complex AI systems, a more useful formulation may be:
 
-\[
+$$
 x^*(P)
 =
 \arg\max_{x \in X_{\mathrm{valid}}(P)}
 U(x \mid P)
-\]
+$$
 
-where \(X_{\mathrm{valid}}(P)\) represents candidates satisfying applicable constraints.
+where $X_{\mathrm{valid}}(P)$ represents candidates satisfying applicable constraints.
 
 ### 3.3 Computational Cost
 
@@ -243,18 +243,18 @@ Evaluation and search consume resources.
 
 A cost-aware objective is:
 
-\[
+$$
 J(x \mid P)
 =
 \mathbb{E}[U(x \mid P)]
 -
 \lambda(P) C(x)
-\]
+$$
 
 where:
 
-- \(C(x)\): Computational or operational cost;
-- \(\lambda(P)\): Perspective-dependent cost sensitivity.
+- $C(x)$: Computational or operational cost;
+- $\lambda(P)$: Perspective-dependent cost sensitivity.
 
 This formulation is illustrative.
 
@@ -299,24 +299,24 @@ Meta-Scoring Intelligence evaluates the evaluators used by an intelligence syste
 
 Let:
 
-\[
+$$
 \mathcal{S}
 =
 \{S_1,S_2,\ldots,S_m\}
-\]
+$$
 
 represent candidate scoring mechanisms.
 
 A meta-evaluator may estimate:
 
-\[
+$$
 M(S_i \mid P,E)
-\]
+$$
 
 where:
 
-- \(P\): Perspective;
-- \(E\): Validation evidence.
+- $P$: Perspective;
+- $E$: Validation evidence.
 
 ### 4.2 Meta-Scoring Dimensions
 
@@ -339,19 +339,19 @@ A single scalar meta-score may conceal important tradeoffs.
 
 A more general representation is:
 
-\[
+$$
 M(S_i \mid P,E)
 =
 (q_i,c_i,r_i,t_i,a_i)
-\]
+$$
 
 where:
 
-- \(q_i\): Evaluation quality;
-- \(c_i\): Cost;
-- \(r_i\): Robustness;
-- \(t_i\): Transferability;
-- \(a_i\): Applicability.
+- $q_i$: Evaluation quality;
+- $c_i$: Cost;
+- $r_i$: Robustness;
+- $t_i$: Transferability;
+- $a_i$: Applicability.
 
 A controller may use multi-objective selection, constraints, or lexicographic ordering.
 
@@ -359,14 +359,14 @@ A controller may use multi-objective selection, constraints, or lexicographic or
 
 A candidate selection rule is:
 
-\[
+$$
 S^*
 =
 \arg\max_{S_i \in \mathcal{S}_{\mathrm{valid}}}
 J(S_i \mid P,E)
-\]
+$$
 
-where \(\mathcal{S}_{\mathrm{valid}}\) contains evaluators satisfying relevant contracts and policies.
+where $\mathcal{S}_{\mathrm{valid}}$ contains evaluators satisfying relevant contracts and policies.
 
 ### 4.5 Meta-Scoring as Structural Intelligence
 
@@ -532,11 +532,11 @@ Confidence and Risk Check
 
 ### 6.4 Evaluation Effort as a Control Variable
 
-Let \(e\) represent evaluation effort.
+Let $e$ represent evaluation effort.
 
 The Control Plane may seek:
 
-\[
+$$
 e^*
 =
 \arg\max_{e \in E_{\mathrm{valid}}}
@@ -545,9 +545,9 @@ e^*
 -
 \lambda C(e)
 \right)
-\]
+$$
 
-where \(U(e\mid P)\) represents expected decision utility after applying evaluation effort \(e\).
+where $U(e\mid P)$ represents expected decision utility after applying evaluation effort $e$.
 
 ### 6.5 Escalation Triggers
 
@@ -582,11 +582,11 @@ This motivates a Value of Information perspective.
 
 ### 7.2 Expected Value of Additional Evaluation
 
-Let \(a\) represent a candidate additional evaluation action.
+Let $a$ represent a candidate additional evaluation action.
 
 A conceptual formulation is:
 
-\[
+$$
 VOI(a\mid P)
 =
 \mathbb{E}[U_{\mathrm{after}}(a\mid P)]
@@ -594,7 +594,7 @@ VOI(a\mid P)
 U_{\mathrm{before}}(P)
 -
 C(a)
-\]
+$$
 
 The expression assumes utility and cost are represented in compatible units.
 
@@ -844,21 +844,21 @@ The Control Plane may need to choose:
 
 Let:
 
-\[
+$$
 A = (L_i,I_j,C)
-\]
+$$
 
 represent a candidate architecture containing:
 
-- \(L_i\): Localization Engine;
-- \(I_j\): Per-Node Intelligence Engine;
-- \(C\): Composition contract.
+- $L_i$: Localization Engine;
+- $I_j$: Per-Node Intelligence Engine;
+- $C$: Composition contract.
 
 A meta-evaluator may estimate:
 
-\[
+$$
 M(A\mid P,E)
-\]
+$$
 
 based on expected quality, cost, reliability, and applicability.
 

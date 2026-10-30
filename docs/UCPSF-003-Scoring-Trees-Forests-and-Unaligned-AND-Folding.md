@@ -119,18 +119,18 @@ A Scoring Tree is a hierarchical representation of evaluation operations and the
 
 We define:
 
-\[
+$$
 T_S = (V,E,O,\Sigma,P,C)
-\]
+$$
 
 where:
 
-- \(V\): Scoring nodes;
-- \(E\): Directed dependency edges;
-- \(O\): Assigned scoring or decision operators;
-- \(\Sigma\): Score and evidence semantics;
-- \(P\): Perspective metadata;
-- \(C\): Contracts and constraints.
+- $V$: Scoring nodes;
+- $E$: Directed dependency edges;
+- $O$: Assigned scoring or decision operators;
+- $\Sigma$: Score and evidence semantics;
+- $P$: Perspective metadata;
+- $C$: Contracts and constraints.
 
 A Scoring Tree may contain numerical, symbolic, learned, or hybrid evaluation mechanisms.
 
@@ -138,20 +138,20 @@ A Scoring Tree may contain numerical, symbolic, learned, or hybrid evaluation me
 
 A Scoring Node can be represented as:
 
-\[
+$$
 v_i =
 (id_i,o_i,I_i,O_i,p_i,c_i,e_i)
-\]
+$$
 
 where:
 
-- \(id_i\): Node identity;
-- \(o_i\): Operator identity;
-- \(I_i\): Input contract;
-- \(O_i\): Output contract;
-- \(p_i\): Perspective requirements;
-- \(c_i\): Constraints;
-- \(e_i\): Evidence and audit metadata.
+- $id_i$: Node identity;
+- $o_i$: Operator identity;
+- $I_i$: Input contract;
+- $O_i$: Output contract;
+- $p_i$: Perspective requirements;
+- $c_i$: Constraints;
+- $e_i$: Evidence and audit metadata.
 
 A node may perform:
 
@@ -236,10 +236,10 @@ A Scoring Forest is a collection of Scoring Trees with explicit relationships an
 
 Let:
 
-\[
+$$
 \mathcal{F}_S =
 \{T_{S,1},T_{S,2},\ldots,T_{S,m}\}
-\]
+$$
 
 Each tree may represent a distinct:
 
@@ -367,18 +367,18 @@ Behavioral commonality concerns the outcomes produced by scoring structures unde
 
 Let:
 
-\[
+$$
 D(T,x,P)
-\]
+$$
 
-represent the decision produced by Scoring Tree \(T\) for candidate context \(x\) under perspective \(P\).
+represent the decision produced by Scoring Tree $T$ for candidate context $x$ under perspective $P$.
 
-Two trees may be behaviorally similar over distribution \(\mathcal{D}\) if:
+Two trees may be behaviorally similar over distribution $\mathcal{D}$ if:
 
-\[
+$$
 \Pr_{(x,P)\sim\mathcal{D}}
 [D(T_1,x,P)=D(T_2,x,P)]
-\]
+$$
 
 is sufficiently high.
 
@@ -486,36 +486,36 @@ This requires a formal correspondence and validation process.
 
 Let:
 
-\[
+$$
 \mathcal{T} =
 \{T_1,T_2,\ldots,T_n\}
-\]
+$$
 
 represent a collection of Scoring Trees.
 
 Additional inputs include:
 
-- Perspective \(P\);
-- Evidence set \(E\);
-- Contract constraints \(C\);
-- Preservation requirements \(R\).
+- Perspective $P$;
+- Evidence set $E$;
+- Contract constraints $C$;
+- Preservation requirements $R$.
 
 ### 6.2 Outputs
 
 The proposed Folding process returns:
 
-\[
+$$
 F_{\mathrm{AND}}(\mathcal{T},P,E,C,R)
 =
 (CCC,\Delta,B,U)
-\]
+$$
 
 where:
 
-- \(CCC\): Candidate Common Concept Core;
-- \(\Delta\): Preserved structural differences;
-- \(B\): Applicability boundaries;
-- \(U\): Uncertainty and validation metadata.
+- $CCC$: Candidate Common Concept Core;
+- $\Delta$: Preserved structural differences;
+- $B$: Applicability boundaries;
+- $U$: Uncertainty and validation metadata.
 
 The output may contain multiple candidate cores rather than a unique solution.
 
@@ -756,27 +756,27 @@ Therefore, smaller structure is not automatically better structure.
 
 Let:
 
-\[
+$$
 D(T,x,P)
-\]
+$$
 
-represent the decision produced by source tree \(T\).
+represent the decision produced by source tree $T$.
 
 Let:
 
-\[
+$$
 D(F,x,P)
-\]
+$$
 
-represent the decision produced by a folded structure \(F\).
+represent the decision produced by a folded structure $F$.
 
 A basic preservation measure is:
 
-\[
+$$
 Q_D =
 \Pr_{(x,P)\sim\mathcal{D}}
 [D(T,x,P)=D(F,x,P)]
-\]
+$$
 
 This is useful when decisions are directly comparable.
 
@@ -788,14 +788,14 @@ Two systems may produce different decisions with similar utility, or identical d
 
 A stronger criterion may evaluate downstream utility:
 
-\[
+$$
 Q_U =
 \mathbb{E}_{\mathcal{D}}
 [U(D(F,x,P))]
 -
 \mathbb{E}_{\mathcal{D}}
 [U(D(T,x,P))]
-\]
+$$
 
 A negative value indicates expected utility degradation relative to the reference tree.
 
@@ -829,11 +829,11 @@ A safety-critical evaluator may require stronger guarantees.
 
 Thus:
 
-\[
+$$
 R = R(P)
-\]
+$$
 
-where \(R\) specifies perspective-dependent preservation requirements.
+where $R$ specifies perspective-dependent preservation requirements.
 
 ---
 
@@ -847,15 +847,15 @@ However, excessive unification may destroy domain-specific information.
 
 A more flexible representation is:
 
-\[
+$$
 T_i \approx CCC \oplus \Delta_i
-\]
+$$
 
 where:
 
-- \(CCC\): Shared scoring principle;
-- \(\Delta_i\): Specialized difference;
-- \(\oplus\): Context-dependent composition.
+- $CCC$: Shared scoring principle;
+- $\Delta_i$: Specialized difference;
+- $\oplus$: Context-dependent composition.
 
 This expression is conceptual.
 
@@ -931,17 +931,16 @@ Local CCC-2 --------/
 
 Let:
 
-\[
-CCC_{t+1}
-=
-\operatorname{Distill}(CCC_t,T_{new},E_t)
-\]
+$$
+CCC_{t+1} =
+operatorname{Distill}(CCC_t,T_{new},E_t)
+$$
 
 where:
 
-- \(CCC_t\): Existing core;
-- \(T_{new}\): New scoring structure;
-- \(E_t\): Validation evidence.
+- $CCC_t$: Existing core;
+- $T_{new}$: New scoring structure;
+- $E_t$: Validation evidence.
 
 The operation may update the core or preserve the new structure as a separate branch.
 

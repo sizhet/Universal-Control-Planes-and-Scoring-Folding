@@ -118,20 +118,20 @@ The proposed research direction is:
 
 A basic scoring mechanism maps a candidate to a scalar value:
 
-\[
+$$
 S(x) \in \mathbb{R}
-\]
+$$
 
 where:
 
-- \(x\) is a candidate;
-- \(S\) is a scoring function.
+- $x$ is a candidate;
+- $S$ is a scoring function.
 
 A selection mechanism may then choose:
 
-\[
+$$
 x^* = \arg\max_{x \in X} S(x)
-\]
+$$
 
 This formulation is powerful when the objective is well-defined and the score accurately represents the desired outcome.
 
@@ -141,14 +141,14 @@ However, complex decisions often involve multiple objectives, uncertainty, hard 
 
 A common extension combines multiple criteria:
 
-\[
+$$
 S(x) = \sum_{i=1}^{n} w_i s_i(x)
-\]
+$$
 
 where:
 
-- \(s_i(x)\) is a local criterion;
-- \(w_i\) is its weight.
+- $s_i(x)$ is a local criterion;
+- $w_i$ is its weight.
 
 This provides a simple mechanism for integrating multiple dimensions.
 
@@ -166,11 +166,11 @@ Ranking systems compare candidates directly.
 
 A pairwise evaluator may estimate:
 
-\[
+$$
 P(x_i \succ x_j \mid C)
-\]
+$$
 
-where \(C\) represents the evaluation context.
+where $C$ represents the evaluation context.
 
 Pairwise methods can avoid some difficulties associated with absolute score calibration.
 
@@ -241,25 +241,25 @@ We propose that a useful computational abstraction of such judgment is a dynamic
 
 Let:
 
-\[
+$$
 P = (G,C,B,T,R)
-\]
+$$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Resource budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Resource budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 An evaluator becomes:
 
-\[
+$$
 S(x \mid P)
-\]
+$$
 
-rather than merely \(S(x)\).
+rather than merely $S(x)$.
 
 Different perspectives may activate different metrics, scoring branches, constraints, and aggregation mechanisms.
 
@@ -302,11 +302,11 @@ Metric Distance introduces a useful shift from absolute evaluation toward explic
 
 Let:
 
-\[
+$$
 d(x,x^* \mid P)
-\]
+$$
 
-represent the distance between candidate \(x\) and target \(x^*\) under perspective \(P\).
+represent the distance between candidate $x$ and target $x^*$ under perspective $P$.
 
 The distance may represent:
 
@@ -323,14 +323,14 @@ In some applications, it is more accurately described as a task-specific distanc
 
 ### 4.2 Differential Improvement
 
-Given an initial state \(x_t\) and a candidate successor \(x_{t+1}\), define:
+Given an initial state $x_t$ and a candidate successor $x_{t+1}$, define:
 
-\[
+$$
 \Delta d =
 d(x_t,x^* \mid P)
 -
 d(x_{t+1},x^* \mid P)
-\]
+$$
 
 A positive value indicates a reduction in the selected distance.
 
@@ -380,16 +380,16 @@ A Scoring Tree is a structured representation of evaluation dependencies and dec
 
 A simplified representation is:
 
-\[
+$$
 T_S = (V,E,F,A)
-\]
+$$
 
 where:
 
-- \(V\): Scoring nodes;
-- \(E\): Dependency edges;
-- \(F\): Local evaluation functions;
-- \(A\): Aggregation and decision operators.
+- $V$: Scoring nodes;
+- $E$: Dependency edges;
+- $F$: Local evaluation functions;
+- $A$: Aggregation and decision operators.
 
 A node may perform:
 
@@ -481,10 +481,10 @@ Different tasks may require distinct evaluation structures.
 
 A Scoring Forest provides a collection of related or heterogeneous Scoring Trees:
 
-\[
+$$
 \mathcal{F}_S =
 \{T_{S,1},T_{S,2},\ldots,T_{S,m}\}
-\]
+$$
 
 These trees may differ in:
 
@@ -614,13 +614,12 @@ The core may then be:
 
 This suggests a recursive process:
 
-\[
-CCC_{t+1}
-=
-\operatorname{Update}(CCC_t,\Delta E_t)
-\]
+$$
+CCC_{t+1} =
+operatorname{Update}(CCC_t,\Delta E_t)
+$$
 
-where \(\Delta E_t\) represents newly collected evidence.
+where $\Delta E_t$ represents newly collected evidence.
 
 The update must not be assumed to improve the core automatically.
 
@@ -645,21 +644,21 @@ In such environments, exhaustive optimization may be economically unjustified.
 
 ### 8.2 Perspective-Conditioned Utility
 
-A candidate decision policy \(\pi\) can be evaluated under perspective \(P\):
+A candidate decision policy $\pi$ can be evaluated under perspective $P$:
 
-\[
+$$
 J(\pi\mid P)
 =
 \mathbb{E}[U(\pi\mid P)]
 -
 \lambda C(\pi)
-\]
+$$
 
 where:
 
-- \(U\): Expected utility;
-- \(C\): Computational or operational cost;
-- \(\lambda\): Cost sensitivity.
+- $U$: Expected utility;
+- $C$: Computational or operational cost;
+- $\lambda$: Cost sensitivity.
 
 The objective may also include explicit constraints on risk, latency, and policy compliance.
 
@@ -697,18 +696,18 @@ Ordinary scoring evaluates candidate solutions.
 
 Meta-Scoring evaluates scoring mechanisms themselves.
 
-Let \(S_i\) represent a candidate evaluator.
+Let $S_i$ represent a candidate evaluator.
 
 A meta-evaluator may estimate:
 
-\[
+$$
 M(S_i\mid P,E)
-\]
+$$
 
 where:
 
-- \(P\): Evaluation perspective;
-- \(E\): Validation evidence.
+- $P$: Evaluation perspective;
+- $E$: Validation evidence.
 
 Possible criteria include:
 
@@ -888,7 +887,7 @@ The degree of coupling can itself become an object of evaluation and optimizatio
 
 The long-term architectural hypothesis is:
 
-\[
+$$
 \text{Hybrid Intelligence}
 +
 \text{Generalized Scoring}
@@ -896,7 +895,7 @@ The long-term architectural hypothesis is:
 \text{Structural Governance}
 \rightarrow
 \text{Governed Structural Evolution}
-\]
+$$
 
 This is a proposed direction, not an established performance result.
 

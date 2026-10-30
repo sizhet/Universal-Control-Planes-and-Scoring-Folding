@@ -82,22 +82,22 @@ This creates an opportunity to investigate evaluation as a structured intelligen
 
 A conventional evaluator may be represented as:
 
-\[
+$$
 S(x)
-\]
+$$
 
-where \(x\) is the object being evaluated.
+where $x$ is the object being evaluated.
 
 A Perspective-aware evaluator may instead be represented as:
 
-\[
+$$
 S(x\mid P,E)
-\]
+$$
 
 where:
 
-- \(P\): Perspective;
-- \(E\): Available evidence.
+- $P$: Perspective;
+- $E$: Available evidence.
 
 A structured evaluator may contain multiple scoring nodes, branches, and dependencies.
 
@@ -195,14 +195,14 @@ A scoring function assigns an evaluation result to an object.
 
 For example:
 
-\[
+$$
 S(x)=w^\top f(x)
-\]
+$$
 
 where:
 
-- \(f(x)\): Feature representation;
-- \(w\): Evaluation weights.
+- $f(x)$: Feature representation;
+- $w$: Evaluation weights.
 
 This formulation is useful when relevant dimensions and weights are sufficiently well specified.
 
@@ -360,9 +360,9 @@ A Scoring Forest contains multiple evaluation structures.
 
 Conceptually:
 
-\[
+$$
 \mathcal{F}_S=\{T_1,T_2,\ldots,T_n\}
-\]
+$$
 
 Different trees may correspond to:
 
@@ -414,17 +414,17 @@ The analogy motivates a model in which multiple Scoring Trees share reusable str
 
 We propose:
 
-\[
+$$
 T_i \approx K \oplus \Delta_i
-\]
+$$
 
 where:
 
-- \(T_i\): Individual Scoring Tree;
-- \(K\): Shared Common Concept Core;
-- \(\Delta_i\): Specialized structural or behavioral differences.
+- $T_i$: Individual Scoring Tree;
+- $K$: Shared Common Concept Core;
+- $\Delta_i$: Specialized structural or behavioral differences.
 
-The operator \(\oplus\) denotes a conceptual composition, not necessarily an invertible algebraic operation.
+The operator $\oplus$ denotes a conceptual composition, not necessarily an invertible algebraic operation.
 
 ### 6.3 Shared Roots
 
@@ -814,25 +814,25 @@ Candidate engines include:
 
 Let:
 
-\[
+$$
 \mathcal{L}=\{L_1,\ldots,L_m\}
-\]
+$$
 
 and:
 
-\[
+$$
 \mathcal{I}=\{I_1,\ldots,I_n\}
-\]
+$$
 
 A candidate architecture may be selected from a contract-compatible subset:
 
-\[
+$$
 \mathcal{A}
 \subseteq
 \mathcal{L}\times\mathcal{I}\times\mathcal{C}
-\]
+$$
 
-where \(\mathcal{C}\) represents composition contracts.
+where $\mathcal{C}$ represents composition contracts.
 
 ### 11.5 Adaptive Coupling and Decoupling
 
@@ -1367,7 +1367,7 @@ Meaningful progress should be supported by evidence of at least one of the follo
 
 A conceptual measure is:
 
-\[
+$$
 V_{\mathrm{structural}}
 =
 B_{\mathrm{validated}}
@@ -1375,13 +1375,13 @@ B_{\mathrm{validated}}
 C_{\mathrm{lifecycle}}
 -
 R_{\mathrm{residual}}
-\]
+$$
 
 where:
 
-- \(B_{\mathrm{validated}}\): Validated benefits;
-- \(C_{\mathrm{lifecycle}}\): Development, execution, validation, and maintenance costs;
-- \(R_{\mathrm{residual}}\): Risk-adjusted residual losses.
+- $B_{\mathrm{validated}}$: Validated benefits;
+- $C_{\mathrm{lifecycle}}$: Development, execution, validation, and maintenance costs;
+- $R_{\mathrm{residual}}$: Risk-adjusted residual losses.
 
 The terms must be expressed in compatible units before numerical aggregation.
 

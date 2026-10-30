@@ -176,21 +176,21 @@ A Universal Control Plane is a logical system responsible for selecting, coordin
 
 A conceptual representation is:
 
-\[
+$$
 UCP = (P,C,L,I,S,M,E,G,A)
-\]
+$$
 
 where:
 
-- \(P\): Perspective management;
-- \(C\): Contracts and compatibility;
-- \(L\): Localization Engine management;
-- \(I\): Intelligence Engine management;
-- \(S\): Scoring Trees and Forests;
-- \(M\): Meta-Scoring;
-- \(E\): Evidence and structural learning;
-- \(G\): Governance and policy;
-- \(A\): Audit and lifecycle control.
+- $P$: Perspective management;
+- $C$: Contracts and compatibility;
+- $L$: Localization Engine management;
+- $I$: Intelligence Engine management;
+- $S$: Scoring Trees and Forests;
+- $M$: Meta-Scoring;
+- $E$: Evidence and structural learning;
+- $G$: Governance and policy;
+- $A$: Audit and lifecycle control.
 
 This representation describes functional responsibilities rather than a required implementation topology.
 
@@ -342,17 +342,17 @@ The diagram is a logical overview rather than a complete runtime data-flow speci
 
 Following UCPSF-005, we represent Perspective as:
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Resource budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Resource budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 ### 5.2 Perspective-Conditioned Control
 
@@ -485,15 +485,15 @@ Semantic and behavioral conformance may also be required.
 
 The Control Plane may maintain:
 
-\[
+$$
 \mathcal{L}=\{L_1,\ldots,L_m\}
-\]
+$$
 
 for Localization Engines, and:
 
-\[
+$$
 \mathcal{I}=\{I_1,\ldots,I_n\}
-\]
+$$
 
 for Per-Node Intelligence Engines.
 
@@ -501,11 +501,11 @@ for Per-Node Intelligence Engines.
 
 A candidate configuration may be represented as:
 
-\[
+$$
 a=(L_i,I_j,C_{ij})
-\]
+$$
 
-where \(C_{ij}\) is the composition contract.
+where $C_{ij}$ is the composition contract.
 
 More complex configurations may form computational graphs.
 
@@ -628,19 +628,19 @@ Such changes require independent validation.
 
 Structural RSI may propose modifications to:
 
-\[
+$$
 \Theta =
 (\Theta_L,\Theta_I,\Theta_S,\Theta_C,\Theta_D,\Theta_P)
-\]
+$$
 
 where:
 
-- \(\Theta_L\): Localization architecture;
-- \(\Theta_I\): Intelligence Engines;
-- \(\Theta_S\): Scoring structures;
-- \(\Theta_C\): Composition contracts;
-- \(\Theta_D\): Dispatch and Calling Graphs;
-- \(\Theta_P\): Policy-adjacent configuration.
+- $\Theta_L$: Localization architecture;
+- $\Theta_I$: Intelligence Engines;
+- $\Theta_S$: Scoring structures;
+- $\Theta_C$: Composition contracts;
+- $\Theta_D$: Dispatch and Calling Graphs;
+- $\Theta_P$: Policy-adjacent configuration.
 
 The inclusion of policy-adjacent configuration does not imply that the system may autonomously rewrite its governing authority.
 

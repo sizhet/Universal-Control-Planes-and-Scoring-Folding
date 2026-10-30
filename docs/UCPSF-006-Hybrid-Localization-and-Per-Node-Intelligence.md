@@ -122,19 +122,19 @@ Localization Intelligence identifies task-relevant information or computational 
 
 A generalized localization function may be represented as:
 
-\[
+$$
 L(q,C,P) \rightarrow (R,W,U,T)
-\]
+$$
 
 where:
 
-- \(q\): Task or query;
-- \(C\): Available context or structural environment;
-- \(P\): Perspective;
-- \(R\): Selected context, references, or structural locations;
-- \(W\): Relevance weights or routing metadata;
-- \(U\): Uncertainty and applicability information;
-- \(T\): Trace and provenance.
+- $q$: Task or query;
+- $C$: Available context or structural environment;
+- $P$: Perspective;
+- $R$: Selected context, references, or structural locations;
+- $W$: Relevance weights or routing metadata;
+- $U$: Uncertainty and applicability information;
+- $T$: Trace and provenance.
 
 The output need not be a contiguous text segment.
 
@@ -180,14 +180,13 @@ The selected information must remain sufficient for the intended computation.
 
 A standard attention operation can be represented as:
 
-\[
-\operatorname{Attention}(Q,K,V)
-=
-\operatorname{softmax}
+$$
+operatorname{Attention}(Q,K,V) =
+operatorname{softmax}
 \left(
 \frac{QK^\top}{\sqrt{d_k}}
 \right)V
-\]
+$$
 
 This operation computes context-dependent weighted combinations of value representations.
 
@@ -245,11 +244,11 @@ It is whether additional structural organization can improve the deployment and 
 
 We propose a Localization Engine set:
 
-\[
+$$
 \mathcal{L}
 =
 \{L_1,L_2,\ldots,L_m\}
-\]
+$$
 
 Each engine may specialize in a different form of contextual or structural localization.
 
@@ -358,19 +357,19 @@ Per-Node Intelligence performs computation over a selected structural context.
 
 A generalized intelligence function may be represented as:
 
-\[
+$$
 I(R,q,P) \rightarrow (Y,E,U,T)
-\]
+$$
 
 where:
 
-- \(R\): Localized context;
-- \(q\): Task;
-- \(P\): Perspective;
-- \(Y\): Output or candidate result;
-- \(E\): Supporting evidence;
-- \(U\): Uncertainty;
-- \(T\): Execution trace.
+- $R$: Localized context;
+- $q$: Task;
+- $P$: Perspective;
+- $Y$: Output or candidate result;
+- $E$: Supporting evidence;
+- $U$: Uncertainty;
+- $T$: Execution trace.
 
 ### 5.2 Beyond Next-Token Prediction
 
@@ -469,33 +468,33 @@ Examples include:
 
 We define:
 
-\[
+$$
 \mathcal{L}
 =
 \{L_1,\ldots,L_m\}
-\]
+$$
 
 as the set of available Localization Engines.
 
 We define:
 
-\[
+$$
 \mathcal{I}
 =
 \{I_1,\ldots,I_n\}
-\]
+$$
 
 as the set of available Per-Node Intelligence Engines.
 
 The candidate composition space is:
 
-\[
+$$
 \mathcal{A}
 \subseteq
 \mathcal{L}\times\mathcal{I}\times\mathcal{C}
-\]
+$$
 
-where \(\mathcal{C}\) represents valid composition contracts.
+where $\mathcal{C}$ represents valid composition contracts.
 
 The subset notation is important.
 
@@ -562,15 +561,15 @@ Complex systems may require more than a single localization-engine pair.
 
 A general architecture may be represented as a typed computational graph:
 
-\[
+$$
 G_H=(V_L,V_I,E_C)
-\]
+$$
 
 where:
 
-- \(V_L\): Localization nodes;
-- \(V_I\): Intelligence nodes;
-- \(E_C\): Contract-governed composition edges.
+- $V_L$: Localization nodes;
+- $V_I$: Intelligence nodes;
+- $E_C$: Contract-governed composition edges.
 
 This supports sequential, parallel, conditional, and recursive computational structures.
 
@@ -610,22 +609,22 @@ These levels are architectural options rather than a required evolutionary seque
 
 ### 7.3 Coupling as an Optimization Variable
 
-Let \(a\) represent a candidate architecture configuration.
+Let $a$ represent a candidate architecture configuration.
 
 The Control Plane may select:
 
-\[
+$$
 a^*
 =
 \arg\max_{a\in\mathcal{A}_{valid}}
 J(a\mid P,E)
-\]
+$$
 
 where:
 
-- \(P\): Perspective;
-- \(E\): Available evidence;
-- \(\mathcal{A}_{valid}\): Contract-compatible and policy-permitted configurations.
+- $P$: Perspective;
+- $E$: Available evidence;
+- $\mathcal{A}_{valid}$: Contract-compatible and policy-permitted configurations.
 
 ### 7.4 Coordination Cost
 
@@ -947,14 +946,14 @@ Unaligned AND Folding may identify candidate commonality without requiring ident
 
 A reusable hybrid workflow may be represented conceptually as:
 
-\[
+$$
 H_i \approx K_H \oplus \Delta_i
-\]
+$$
 
 where:
 
-- \(K_H\): Shared hybrid control structure;
-- \(\Delta_i\): Domain-specific engines, contracts, and policies.
+- $K_H$: Shared hybrid control structure;
+- $\Delta_i$: Domain-specific engines, contracts, and policies.
 
 This enables reuse while preserving specialization.
 

@@ -114,26 +114,26 @@ Accordingly, the proposed algorithm requires explicit validation, counter-eviden
 
 A Scoring Tree is represented as:
 
-\[
+$$
 T_i = (V_i,E_i,O_i,\Sigma_i,P_i,C_i)
-\]
+$$
 
 where:
 
-- \(V_i\): Scoring nodes;
-- \(E_i\): Dependency relationships;
-- \(O_i\): Scoring and decision operators;
-- \(\Sigma_i\): Evaluation semantics;
-- \(P_i\): Perspective metadata;
-- \(C_i\): Contracts and constraints.
+- $V_i$: Scoring nodes;
+- $E_i$: Dependency relationships;
+- $O_i$: Scoring and decision operators;
+- $\Sigma_i$: Evaluation semantics;
+- $P_i$: Perspective metadata;
+- $C_i$: Contracts and constraints.
 
 ### 2.2 Scoring Forest
 
 A Scoring Forest is a collection of Scoring Trees:
 
-\[
+$$
 \mathcal{F} = \{T_1,T_2,\ldots,T_n\}
-\]
+$$
 
 The trees may differ in domain, perspective, granularity, or implementation.
 
@@ -143,19 +143,19 @@ A candidate Scoring CCC is a reusable representation of an evaluation or control
 
 We represent a CCC as:
 
-\[
+$$
 K = (R,O,P,B,E,U,V)
-\]
+$$
 
 where:
 
-- \(R\): Reusable structural or behavioral relationships;
-- \(O\): Associated operator semantics;
-- \(P\): Supported perspectives;
-- \(B\): Applicability boundaries;
-- \(E\): Supporting and counter-evidence;
-- \(U\): Uncertainty metadata;
-- \(V\): Version and validation state.
+- $R$: Reusable structural or behavioral relationships;
+- $O$: Associated operator semantics;
+- $P$: Supported perspectives;
+- $B$: Applicability boundaries;
+- $E$: Supporting and counter-evidence;
+- $U$: Uncertainty metadata;
+- $V$: Version and validation state.
 
 A CCC may represent a structural pattern, a behavioral principle, or a combination of both.
 
@@ -163,17 +163,17 @@ A CCC may represent a structural pattern, a behavioral principle, or a combinati
 
 A Specialized Delta preserves source-specific information not captured by the common core.
 
-For a source tree \(T_i\), a conceptual decomposition is:
+For a source tree $T_i$, a conceptual decomposition is:
 
-\[
+$$
 T_i \approx K \oplus \Delta_i
-\]
+$$
 
 where:
 
-- \(K\): Shared core;
-- \(\Delta_i\): Specialized differences;
-- \(\oplus\): Context-dependent reconstruction or composition.
+- $K$: Shared core;
+- $\Delta_i$: Specialized differences;
+- $\oplus$: Context-dependent reconstruction or composition.
 
 The approximation symbol is intentional.
 
@@ -460,19 +460,18 @@ Improve the organization and reuse of candidate CCCs through repeated comparison
 
 ### 7.2 Recursive Update
 
-Let \(K_t\) represent a candidate CCC at iteration \(t\).
+Let $K_t$ represent a candidate CCC at iteration $t$.
 
-A new source tree \(T_{t+1}\) provides additional evidence.
+A new source tree $T_{t+1}$ provides additional evidence.
 
 We propose:
 
-\[
-K_{t+1}
-=
-\operatorname{Update}(K_t,T_{t+1},E_{t+1})
-\]
+$$
+K_{t+1} =
+operatorname{Update}(K_t,T_{t+1},E_{t+1})
+$$
 
-where \(E_{t+1}\) includes supporting and contradictory evidence.
+where $E_{t+1}$ includes supporting and contradictory evidence.
 
 ### 7.3 Update Outcomes
 
@@ -567,21 +566,21 @@ For example, technical, economic, and strategic evaluators may all implement for
 
 Let:
 
-\[
+$$
 \mathcal{K} =
 \{K_1,K_2,\ldots,K_m\}
-\]
+$$
 
 represent candidate CCCs extracted from different families.
 
 A cross-family Folding operation may produce:
 
-\[
+$$
 K_U =
 F_{\mathrm{cross}}(\mathcal{K},P,E)
-\]
+$$
 
-where \(K_U\) is a candidate broader CCC.
+where $K_U$ is a candidate broader CCC.
 
 ### 8.3 Universal Is a Research Objective
 
@@ -798,14 +797,14 @@ Independent evaluation and policy enforcement are required.
 
 A useful folded structure may be represented as:
 
-\[
+$$
 T_i \approx K \oplus \Delta_i
-\]
+$$
 
 where:
 
-- \(K\): Shared core;
-- \(\Delta_i\): Specialized difference.
+- $K$: Shared core;
+- $\Delta_i$: Specialized difference.
 
 ### 11.2 Delta Is Not Noise
 
@@ -861,17 +860,17 @@ Recursive distillation should preserve decision-relevant information.
 
 A basic criterion is decision agreement:
 
-\[
+$$
 Q_D =
 \Pr_{(x,P)\sim\mathcal{D}}
 [D(K,x,P)=D(T,x,P)]
-\]
+$$
 
 where:
 
-- \(K\): Candidate CCC-based evaluator;
-- \(T\): Reference evaluator;
-- \(\mathcal{D}\): Validation distribution.
+- $K$: Candidate CCC-based evaluator;
+- $T$: Reference evaluator;
+- $\mathcal{D}$: Validation distribution.
 
 ### 12.2 Utility Preservation
 
@@ -879,12 +878,12 @@ Decision agreement alone is insufficient.
 
 A candidate CCC should also be evaluated through downstream utility.
 
-\[
+$$
 Q_U =
 \mathbb{E}[U(D(K,x,P))]
 -
 \mathbb{E}[U(D(T,x,P))]
-\]
+$$
 
 ### 12.3 Constraint Preservation
 
@@ -919,7 +918,7 @@ However, compression should not dominate quality or safety requirements.
 
 A possible research objective is:
 
-\[
+$$
 J(K) =
 \alpha Q_D
 +
@@ -930,15 +929,15 @@ J(K) =
 \delta Q_T
 -
 \lambda C_K
-\]
+$$
 
 where:
 
-- \(Q_D\): Decision preservation;
-- \(Q_U\): Utility preservation;
-- \(Q_R\): Robustness;
-- \(Q_T\): Transferability;
-- \(C_K\): Complexity or cost.
+- $Q_D$: Decision preservation;
+- $Q_U$: Utility preservation;
+- $Q_R$: Robustness;
+- $Q_T$: Transferability;
+- $C_K$: Complexity or cost.
 
 The weights are perspective-dependent.
 
@@ -1051,7 +1050,7 @@ Detailed correspondence analysis, behavioral testing, and counter-evidence evalu
 
 Let:
 
-\[
+$$
 C_{\mathrm{total}}
 =
 C_{\mathrm{extract}}
@@ -1061,7 +1060,7 @@ C_{\mathrm{validate}}
 C_{\mathrm{maintain}}
 +
 C_{\mathrm{reuse}}
-\]
+$$
 
 represent total lifecycle cost.
 
