@@ -1368,12 +1368,9 @@ Meaningful progress should be supported by evidence of at least one of the follo
 A conceptual measure is:
 
 $$
-V_{\mathrm{structural}}
-=
-B_{\mathrm{validated}}
--
-C_{\mathrm{lifecycle}}
--
+V_{\mathrm{structural}} =
+B_{\mathrm{validated}} -
+C_{\mathrm{lifecycle}} -
 R_{\mathrm{residual}}
 $$
 
