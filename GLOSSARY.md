@@ -77,9 +77,9 @@ It may involve:
 
 A simple representation is:
 
-\[
+$$
 s:X\rightarrow\mathbb{R}
-\]
+$$
 
 More general scoring mechanisms may return vectors, rankings, categorical decisions, uncertainty estimates, or evidence records.
 
@@ -252,18 +252,18 @@ A node may perform:
 
 A conceptual representation is:
 
-\[
+$$
 T_S=(V,E,O,\Sigma,P,C)
-\]
+$$
 
 where:
 
-- \(V\): Evaluation nodes;
-- \(E\): Structural relationships;
-- \(O\): Evaluation operators;
-- \(\Sigma\): Scoring semantics;
-- \(P\): Perspective information;
-- \(C\): Constraints and contracts.
+- $V$: Evaluation nodes;
+- $E$: Structural relationships;
+- $O$: Evaluation operators;
+- $\Sigma$: Scoring semantics;
+- $P$: Perspective information;
+- $C$: Constraints and contracts.
 
 This representation is a research abstraction rather than a finalized implementation schema.
 
@@ -393,20 +393,20 @@ Composition may be:
 
 A conceptual operator interface is:
 
-\[
+$$
 O:(X,P,E,C)\rightarrow(Y,S,U,T)
-\]
+$$
 
 where:
 
-- \(X\): Input;
-- \(P\): Perspective;
-- \(E\): Evidence;
-- \(C\): Constraints;
-- \(Y\): Output;
-- \(S\): Score;
-- \(U\): Uncertainty;
-- \(T\): Trace.
+- $X$: Input;
+- $P$: Perspective;
+- $E$: Evidence;
+- $C$: Constraints;
+- $Y$: Output;
+- $S$: Score;
+- $U$: Uncertainty;
+- $T$: Trace.
 
 ---
 
@@ -488,15 +488,15 @@ A CCC is a candidate abstraction whose applicability must be validated.
 
 A conceptual decomposition is:
 
-\[
+$$
 T_i\approx K\oplus\Delta_i
-\]
+$$
 
 where:
 
-- \(T_i\): Original structure;
-- \(K\): Common Concept Core;
-- \(\Delta_i\): Specialized Delta.
+- $T_i$: Original structure;
+- $K$: Common Concept Core;
+- $\Delta_i$: Specialized Delta.
 
 The approximation symbol acknowledges that preservation may be incomplete or conditional.
 
@@ -550,17 +550,17 @@ It is not a literal biological or computational equivalence.
 
 UCPSF proposes:
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 ### 7.2 Perspective-Aware Optimization
 
@@ -678,11 +678,11 @@ Per-Node Intelligence may involve:
 
 A conceptual representation is:
 
-\[
+$$
 a=(L_i,I_j,C_{ij})
-\]
+$$
 
-where \(C_{ij}\) is the applicable composition contract.
+where $C_{ij}$ is the applicable composition contract.
 
 ### 8.7 Adaptive Coupling
 
@@ -1152,26 +1152,26 @@ The ability to generate new structures should be accompanied by mechanisms for e
 
 | Symbol | Meaning |
 |---|---|
-| \(X\) | Input or task |
-| \(Y\) | Output or result |
-| \(P\) | Perspective |
-| \(G\) | Goals or governance rules, depending on context |
-| \(C\) | Context, constraints, or contracts, depending on context |
-| \(B\) | Resource budget |
-| \(T\) | Time horizon or trace, depending on context |
-| \(R\) | Risk preferences or structural revision |
-| \(E\) | Evidence |
-| \(S\) | Score or scoring mechanism |
-| \(U\) | Utility or uncertainty, depending on context |
-| \(L_i\) | Localization Engine |
-| \(I_j\) | Per-Node Intelligence Engine |
-| \(T_S\) | Scoring Tree |
-| \(\mathcal{F}_S\) | Scoring Forest |
-| \(K\) | Common Concept Core |
-| \(\Delta\) | Specialized Delta |
-| \(\Theta\) | Structural configuration parameters |
-| \(A\) | Candidate action or architecture |
-| \(M\) | Meta-Scoring mechanism |
+| $X$ | Input or task |
+| $Y$ | Output or result |
+| $P$ | Perspective |
+| $G$ | Goals or governance rules, depending on context |
+| $C$ | Context, constraints, or contracts, depending on context |
+| $B$ | Resource budget |
+| $T$ | Time horizon or trace, depending on context |
+| $R$ | Risk preferences or structural revision |
+| $E$ | Evidence |
+| $S$ | Score or scoring mechanism |
+| $U$ | Utility or uncertainty, depending on context |
+| $L_i$ | Localization Engine |
+| $I_j$ | Per-Node Intelligence Engine |
+| $T_S$ | Scoring Tree |
+| $\mathcal{F}_S$ | Scoring Forest |
+| $K$ | Common Concept Core |
+| $\Delta$ | Specialized Delta |
+| $\Theta$ | Structural configuration parameters |
+| $A$ | Candidate action or architecture |
+| $M$ | Meta-Scoring mechanism |
 
 **Notation caution:** Some symbols are overloaded across conceptual documents. Formal specifications should introduce context-specific namespaces or explicit type declarations to avoid ambiguity.
 
@@ -1281,7 +1281,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned following the archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 

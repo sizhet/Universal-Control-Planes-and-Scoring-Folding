@@ -513,9 +513,9 @@ Evaluate the effects of:
 
 UCPSF proposes:
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where the components represent goals, context and constraints, budget, time horizon, and risk preferences.
 
@@ -1445,7 +1445,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned following the archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 

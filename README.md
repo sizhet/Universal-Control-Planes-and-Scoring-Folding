@@ -179,9 +179,9 @@ $$
 
 where:
 
-- \(T_i\): Individual Scoring Tree;
-- \(K\): Shared Common Concept Core;
-- \(\Delta_i\): Specialized structural or behavioral differences.
+- $T_i$: Individual Scoring Tree;
+- $K$: Shared Common Concept Core;
+- $\Delta_i$: Specialized structural or behavioral differences.
 
 The objective is not maximal compression.
 
@@ -230,11 +230,11 @@ $$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Resource budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Resource budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 **Meta-Scoring Intelligence** evaluates the evaluators themselves.
 
@@ -270,9 +270,9 @@ $$
 
 where:
 
-- \(L_i\): Localization Engine;
-- \(I_j\): Per-Node Intelligence Engine;
-- \(C_{ij}\): Composition contract.
+- $L_i$: Localization Engine;
+- $I_j$: Per-Node Intelligence Engine;
+- $C_{ij}$: Composition contract.
 
 The Universal Control Plane selects among compatible configurations according to Perspective, evidence, cost, risk, and task requirements.
 
@@ -550,7 +550,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: 10.5281/zenodo.23486273.
+DOI: 10.5281/zenodo.23486273
 
 See [CITATION.cff](CITATION.cff) for machine-readable citation metadata.
 
@@ -577,6 +577,19 @@ Its defining proposition is:
 The long-term vision is a transition:
 
 **From fixed evaluation and fixed computational architectures toward governed, composable, and recursively improvable Structural Intelligence systems.**
+
+---
+
+## Authors
+
+**Sizhe Tan & GPT-Obot**
+
+---
+
+## 📚 DBM-SI Series Navigation
+
+See:\
+[./docs/DBM-SI-Series-of-gitHub-Repositories/DBM-SI-Series-of-gitHub-Repositories.md](./docs/DBM-SI-Series-of-gitHub-Repositories/DBM-SI-Series-of-gitHub-Repositories.md)
 
 ---
 

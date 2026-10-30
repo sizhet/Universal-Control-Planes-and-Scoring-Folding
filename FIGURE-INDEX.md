@@ -196,15 +196,15 @@ The Aspen Grove analogy represents multiple distinct trees sharing underlying st
 
 ### Core±Delta Representation
 
-\[
+$$
 T_i \approx K \oplus \Delta_i
-\]
+$$
 
 where:
 
-- \(T_i\): Individual Scoring Tree;
-- \(K\): Common Concept Core;
-- \(\Delta_i\): Specialized differences.
+- $T_i$: Individual Scoring Tree;
+- $K$: Common Concept Core;
+- $\Delta_i$: Specialized differences.
 
 ### Central Message
 
@@ -338,17 +338,17 @@ Fig-005 illustrates how a Control Plane may select and evaluate Scoring mechanis
 
 ### Perspective Representation
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Resource budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Resource budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 ### Main Components
 
@@ -442,15 +442,15 @@ Candidate mechanisms include:
 
 ### Composition Model
 
-\[
+$$
 a=(L_i,I_j,C_{ij})
-\]
+$$
 
 where:
 
-- \(L_i\): Localization Engine;
-- \(I_j\): Per-Node Intelligence Engine;
-- \(C_{ij}\): Composition contract.
+- $L_i$: Localization Engine;
+- $I_j$: Per-Node Intelligence Engine;
+- $C_{ij}$: Composition contract.
 
 ### Central Message
 
@@ -772,7 +772,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned following the archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 

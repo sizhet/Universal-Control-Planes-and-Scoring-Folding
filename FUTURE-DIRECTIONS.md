@@ -120,20 +120,20 @@ This distinction requires formalization.
 
 A candidate generalized interface is:
 
-\[
+$$
 O:(X,P,E,C)\rightarrow(Y,S,U,T)
-\]
+$$
 
 where:
 
-- \(X\): Input;
-- \(P\): Perspective;
-- \(E\): Evidence;
-- \(C\): Constraints;
-- \(Y\): Output;
-- \(S\): Evaluation result;
-- \(U\): Uncertainty;
-- \(T\): Trace.
+- $X$: Input;
+- $P$: Perspective;
+- $E$: Evidence;
+- $C$: Constraints;
+- $Y$: Output;
+- $S$: Evaluation result;
+- $U$: Uncertainty;
+- $T$: Trace.
 
 Future work should specify:
 
@@ -242,18 +242,18 @@ Develop a formal representation for Scoring Trees and Forests.
 
 A conceptual Scoring Tree is:
 
-\[
+$$
 T_S=(V,E,O,\Sigma,P,C)
-\]
+$$
 
 where:
 
-- \(V\): Evaluation nodes;
-- \(E\): Structural relationships;
-- \(O\): Operators;
-- \(\Sigma\): Scoring semantics;
-- \(P\): Perspective;
-- \(C\): Constraints and contracts.
+- $V$: Evaluation nodes;
+- $E$: Structural relationships;
+- $O$: Operators;
+- $\Sigma$: Scoring semantics;
+- $P$: Perspective;
+- $C$: Constraints and contracts.
 
 ### 5.2 Open Questions
 
@@ -418,11 +418,11 @@ Captures recurring decision behavior under specified conditions.
 
 A candidate decomposition is:
 
-\[
+$$
 T_i\approx K\oplus\Delta_i
-\]
+$$
 
-where \(K\) is a shared core and \(\Delta_i\) preserves specialized differences.
+where $K$ is a shared core and $\Delta_i$ preserves specialized differences.
 
 ### 7.6 The Aspen Grove Research Model
 
@@ -472,17 +472,17 @@ Develop mechanisms for evaluating and selecting evaluators.
 
 UCPSF proposes:
 
-\[
+$$
 P=(G,C,B,T,R)
-\]
+$$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 ### 8.3 Meta-Scoring Dimensions
 
@@ -565,11 +565,11 @@ Investigate adaptive composition of Localization Intelligence and Per-Node Intel
 
 A candidate configuration is:
 
-\[
+$$
 a=(L_i,I_j,C_{ij})
-\]
+$$
 
-where \(C_{ij}\) is the applicable composition contract.
+where $C_{ij}$ is the applicable composition contract.
 
 ### 9.5 Adaptive Coupling and Decoupling
 
@@ -1383,7 +1383,7 @@ Repository:
 
 https://github.com/sizhet/Universal-Control-Planes-and-Scoring-Folding
 
-DOI: To be assigned following the archived release.
+DOI: 10.5281/zenodo.23486273
 
 ---
 
