@@ -202,10 +202,10 @@ $$
 
 where:
 
-- \(\theta\): System configuration;
-- \(P\): Perspective;
-- \(U\): Evaluated utility;
-- \(B\): Resource budget.
+- $\theta$: System configuration;
+- $P$: Perspective;
+- $U$: Evaluated utility;
+- $B$: Resource budget.
 
 The objective is conceptual.
 
@@ -364,12 +364,12 @@ $$
 
 where:
 
-- \(\Theta_L\): Localization structures;
-- \(\Theta_I\): Intelligence Engines;
-- \(\Theta_D\): Dispatch and Calling Graphs;
-- \(\Theta_S\): Scoring structures;
-- \(\Theta_K\): CCC structures;
-- \(\Theta_C\): Composition contracts.
+- $\Theta_L$: Localization structures;
+- $\Theta_I$: Intelligence Engines;
+- $\Theta_D$: Dispatch and Calling Graphs;
+- $\Theta_S$: Scoring structures;
+- $\Theta_K$: CCC structures;
+- $\Theta_C$: Composition contracts.
 
 ### 5.2 Localization Modifications
 
@@ -443,12 +443,12 @@ $$
 
 where:
 
-- \(T_Q\): Quality;
-- \(T_C\): Cost;
-- \(T_R\): Risk;
-- \(T_T\): Transferability;
-- \(T_G\): Governance and constraints;
-- \(T_M\): Maintainability.
+- $T_Q$: Quality;
+- $T_C$: Cost;
+- $T_R$: Risk;
+- $T_T$: Transferability;
+- $T_G$: Governance and constraints;
+- $T_M$: Maintainability.
 
 ### 6.3 Quality Evaluation
 
@@ -509,11 +509,11 @@ $$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Resource budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Resource budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 ### 7.2 Example Perspectives
 
@@ -766,8 +766,8 @@ $$
 
 where:
 
-- \(K\): Common Concept Core;
-- \(\Delta_i\): Specialized differences.
+- $K$: Common Concept Core;
+- $\Delta_i$: Specialized differences.
 
 ### 11.7 Recursive Distillation
 

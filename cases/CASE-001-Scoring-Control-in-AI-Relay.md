@@ -244,11 +244,11 @@ $$
 
 where:
 
-- \(G\): Task goals;
-- \(C\): Context and constraints;
-- \(B\): Resource budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Task goals;
+- $C$: Context and constraints;
+- $B$: Resource budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 ### 3.2 Example Perspectives
 
@@ -506,9 +506,9 @@ $$
 
 where:
 
-- \(S_i\): Candidate evaluator;
-- \(P\): Perspective;
-- \(E\): Evidence.
+- $S_i$: Candidate evaluator;
+- $P$: Perspective;
+- $E$: Evidence.
 
 ### 7.4 Evaluation Dimensions
 
@@ -604,7 +604,7 @@ U_{\mathrm{before}}
 C(a)
 $$
 
-where \(a\) is an additional evaluation action.
+where $a$ is an additional evaluation action.
 
 This assumes utility and cost are expressed in compatible units.
 

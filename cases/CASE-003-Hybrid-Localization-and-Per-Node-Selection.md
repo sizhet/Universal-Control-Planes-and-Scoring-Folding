@@ -261,7 +261,7 @@ $$
 a=(L_i,I_j,C_{ij})
 $$
 
-where \(C_{ij}\) represents the applicable composition contract.
+where $C_{ij}$ represents the applicable composition contract.
 
 ### 4.4 Valid Configuration Space
 
@@ -574,11 +574,11 @@ $$
 
 where:
 
-- \(G\): Goals;
-- \(C\): Context and constraints;
-- \(B\): Resource budget;
-- \(T\): Time horizon;
-- \(R\): Risk preferences.
+- $G$: Goals;
+- $C$: Context and constraints;
+- $B$: Resource budget;
+- $T$: Time horizon;
+- $R$: Risk preferences.
 
 ### 8.2 Example Perspectives
 
@@ -638,11 +638,11 @@ $$
 
 where:
 
-- \(T_L\): Localization quality;
-- \(T_I\): Intelligence Engine suitability;
-- \(T_C\): Composition compatibility;
-- \(T_R\): Risk;
-- \(T_B\): Budget and resource cost.
+- $T_L$: Localization quality;
+- $T_I$: Intelligence Engine suitability;
+- $T_C$: Composition compatibility;
+- $T_R$: Risk;
+- $T_B$: Budget and resource cost.
 
 ### 9.3 Localization Quality
 
@@ -701,7 +701,7 @@ a^*
 U(a\mid P,E)
 $$
 
-where \(E\) represents available evidence.
+where $E$ represents available evidence.
 
 This formulation assumes a defined utility model.
 
@@ -1043,8 +1043,8 @@ $$
 
 where:
 
-- \(K_A\): Reusable architecture-selection core;
-- \(\Delta_i\): Task-specific configuration differences.
+- $K_A$: Reusable architecture-selection core;
+- $\Delta_i$: Task-specific configuration differences.
 
 ### 14.7 Recursive Distillation
 
