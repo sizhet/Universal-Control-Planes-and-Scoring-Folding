@@ -256,8 +256,7 @@ The objective is to identify a parameter configuration that improves decision qu
 A simple formulation is:
 
 $$
-\theta^*
-=
+\theta^* =
 \arg\max_{\theta \in \Theta}
 J(\theta \mid P,E)
 $$
@@ -379,8 +378,7 @@ The system may evaluate, select, prune, merge, or compose branches.
 A basic selection mechanism is:
 
 $$
-b^*
-=
+b^* =
 \arg\max_{b_i \in B}
 S(b_i\mid P)
 $$
@@ -599,8 +597,7 @@ A relevant architectural hypothesis is that some scoring tasks may be decomposed
 A generic form is:
 
 $$
-S(x,r)
-=
+S(x,r) =
 f_{\phi}(x)^\top W g_{\psi}(r)
 +
 b(x,r)
@@ -983,8 +980,7 @@ where $\mathcal{O}_{valid}$ contains contract-compatible and policy-permitted op
 The objective may include:
 
 $$
-J(O\mid P,E)
-=
+J(O\mid P,E) =
 \mathbb{E}[U(O\mid P,E)]
 -
 \lambda C(O)
