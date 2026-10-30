@@ -229,8 +229,7 @@ This formulation is appropriate when the objective is well-defined and the searc
 For complex AI systems, a more useful formulation may be:
 
 $$
-x^*(P)
-=
+x^*(P) =
 \arg\max_{x \in X_{\mathrm{valid}}(P)}
 U(x \mid P)
 $$
@@ -244,8 +243,7 @@ Evaluation and search consume resources.
 A cost-aware objective is:
 
 $$
-J(x \mid P)
-=
+J(x \mid P) =
 \mathbb{E}[U(x \mid P)]
 -
 \lambda(P) C(x)
@@ -300,8 +298,7 @@ Meta-Scoring Intelligence evaluates the evaluators used by an intelligence syste
 Let:
 
 $$
-\mathcal{S}
-=
+\mathcal{S} =
 \{S_1,S_2,\ldots,S_m\}
 $$
 
@@ -340,8 +337,7 @@ A single scalar meta-score may conceal important tradeoffs.
 A more general representation is:
 
 $$
-M(S_i \mid P,E)
-=
+M(S_i \mid P,E) =
 (q_i,c_i,r_i,t_i,a_i)
 $$
 
@@ -360,8 +356,7 @@ A controller may use multi-objective selection, constraints, or lexicographic or
 A candidate selection rule is:
 
 $$
-S^*
-=
+S^* =
 \arg\max_{S_i \in \mathcal{S}_{\mathrm{valid}}}
 J(S_i \mid P,E)
 $$
@@ -537,12 +532,10 @@ Let $e$ represent evaluation effort.
 The Control Plane may seek:
 
 $$
-e^*
-=
+e^* =
 \arg\max_{e \in E_{\mathrm{valid}}}
 \left(
-\mathbb{E}[U(e\mid P)]
--
+\mathbb{E}[U(e\mid P)] -
 \lambda C(e)
 \right)
 $$
@@ -587,10 +580,8 @@ Let $a$ represent a candidate additional evaluation action.
 A conceptual formulation is:
 
 $$
-VOI(a\mid P)
-=
-\mathbb{E}[U_{\mathrm{after}}(a\mid P)]
--
+VOI(a\mid P) =
+\mathbb{E}[U_{\mathrm{after}}(a\mid P)] -
 U_{\mathrm{before}}(P)
 -
 C(a)
