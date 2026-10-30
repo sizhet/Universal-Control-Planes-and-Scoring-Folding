@@ -268,8 +268,7 @@ where $C_{ij}$ represents the applicable composition contract.
 The set of valid configurations is:
 
 $$
-\mathcal{A}_{valid}
-=
+\mathcal{A}_{valid} =
 \{
 a \mid
 Compatible(a)
