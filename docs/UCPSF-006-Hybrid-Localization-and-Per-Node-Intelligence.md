@@ -245,8 +245,7 @@ It is whether additional structural organization can improve the deployment and 
 We propose a Localization Engine set:
 
 $$
-\mathcal{L}
-=
+\mathcal{L} =
 \{L_1,L_2,\ldots,L_m\}
 $$
 
@@ -469,8 +468,7 @@ Examples include:
 We define:
 
 $$
-\mathcal{L}
-=
+\mathcal{L} =
 \{L_1,\ldots,L_m\}
 $$
 
@@ -479,8 +477,7 @@ as the set of available Localization Engines.
 We define:
 
 $$
-\mathcal{I}
-=
+\mathcal{I} =
 \{I_1,\ldots,I_n\}
 $$
 
@@ -614,8 +611,7 @@ Let $a$ represent a candidate architecture configuration.
 The Control Plane may select:
 
 $$
-a^*
-=
+a^* = 
 \arg\max_{a\in\mathcal{A}_{valid}}
 J(a\mid P,E)
 $$
